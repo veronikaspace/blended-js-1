@@ -87,17 +87,17 @@
 // Корисне посилання для відображення годин та хвилин у потрібному форматі ('01' замість '1'): 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/padStart#examples
 
-// const totalMinutes = Number(prompt('Введіть кількість хвилин'));
+const totalMinutes = Number(prompt('Введіть кількість хвилин'));
 
-// console.log(formatTime(totalMinutes));
+console.log(formatTime(totalMinutes));
 
-// function formatTime(totalMinutes) {
-//     const hours = Math.floor(totalMinutes / 60);
-//     const modifiedHours = String(hours).padStart(2, 0);
-//     const minutes = totalMinutes % 60;
-//     const modifiedMinutes = String(minutes).padStart(2, 0);
-//     return `${modifiedHours}:${modifiedMinutes}`;
-// }
+function formatTime(totalMinutes) {
+    const hours = Math.floor(totalMinutes / 60);
+    const modifiedHours = String(hours).padStart(2, 0);
+    const minutes = totalMinutes % 60;
+    const modifiedMinutes = String(minutes).padStart(2, 0);
+    return `${modifiedHours}:${modifiedMinutes}`;
+}
 
 
 
